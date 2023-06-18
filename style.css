@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&display=swap');
+
+@import url(' https://fonts.cdnfonts.com/css/samsungone ');
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: 'SamsungOne', sans-serif;
+
+
+
+}
+
+h1 {
+
+
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+span {
+
+    font-size: .9rem;
+    color: #757373;
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+
+    box-shadow: 2px 2px 10px rgba(0, 0, 1, 0.336);
+    background-color: rgb(255, 255, 255);
+
+}
+
+nav img {
+
+
+    width: 150px;
+    cursor: pointer;
+}
+
+nav .cabeçalho ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+}
+
+
+nav .cabeçalho li {
+
+
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .cabeçalho li a {
+
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3 ease;
+}
+
+
+nav .cabeçalho li a:hover {
+
+
+    color: rgb(206, 94, 3);
+}
+
+#inicio {
+
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("i507695.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#inicio h2 {
+
+
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#inicio p {
+
+    width: 50%;
+    color: white;
+    font-size: 0.9rem;
+    line-height: 25px;
+    padding-top: 10px;
+}
+
+#inicio .btn {
+
+    margin-top: 30px;
+}
+
+#inicio a {
+
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+
+#inicio a.btn2 {
+
+    color: white;
+    background: rgb(21, 21, 100);
+    transition: 0.3s ease;
+}
+
+#inicio a.btn2:hover {
+
+    color: rgb(21, 21, 100);
+    background: rgb(255, 255, 255);
+}
+
+#inicio a.btn3 {
+
+    color: white;
+    background: rgb(21, 21, 100);
+    transition: 0.3s ease;
+}
+
+#inicio a.btn3:hover {
+
+    color: rgb(21, 21, 100);
+    background: rgb(255, 255, 255);
+}
+
+#Caract {
+
+
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#Caract p {
+
+    padding-top: 5px;
+}
+
+#Caract .icons-caract {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 45px;
+
+}
+
+#Caract .icons {
+
+    background: rgb(207, 240, 248);
+    text-align: start;
+}
+
+#Caract .icons i {
+
+
+    font-size: 2.3rem;
+    color: rgb(44, 44, 80);
+}
+
+#Caract .icons h3 {
+
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(44, 44, 80);
+    padding: 13px 0 7px 0;
+}
+
+#Caract .icons p {
+
+
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(0, 0, 77);
+    padding: 13px 0 7px 0;
+}
