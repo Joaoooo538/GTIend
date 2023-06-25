@@ -221,7 +221,7 @@ nav .cabeçalho li a:hover {
 
 #populares {
 
-    padding: 8vw 8vw 0 8vw;
+    padding: 8vw 8vw 8vw 8vw;
     text-align: center;
 }
 
@@ -253,7 +253,7 @@ nav .cabeçalho li a:hover {
 #populares .cells img {
 
 
-    width: 75%;
+    width: 70%;
     height: 55%;
     background-size: cover;
     background-position: center;
@@ -293,7 +293,7 @@ nav .cabeçalho li a:hover {
     border-radius: 50%;
     position: absolute;
     right: 15px;
-    bottom: 200px;
+    bottom: 300px;
     font-weight: 500;
 }
 
@@ -438,4 +438,85 @@ footer {
 #populares .detalhes h6 {
 
     padding-top: 3px;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 15px 20px;
+    }
+
+    nav img {
+        width: 130px;
+    }
+
+    #menu-btn {
+
+
+        display: initial;
+    }
+
+    #menu-close {
+
+        display: initial;
+        font-size: 1.6rem;
+        color: #fff;
+        padding: 30px 0 20px 20px;
+    }
+
+    nav .cabeçalho ul {
+        position: absolute;
+
+        top: 0;
+        right: -220px;
+        width: 220px;
+        height: 100vh;
+        background: rgb(0, 0, 0);
+        backdrop-filter: blur(4.5px);
+        border: 1px solid rgb(255, 255, 255, 0.18);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        align-items: flex-start;
+
+
+    }
+
+    nav .cabeçalho ul.active {
+        right: 0;
+    }
+
+    nav .cabeçalho ul li {
+        padding: 20px;
+        margin-left: 0;
+    }
+
+    nav .cabeçalho ul li a {
+
+
+        color: #fff;
+    }
+
+    #inicio {
+        padding: 0px;
+    }
+
+    #inicio p {
+
+        width: 90%;
+
+    }
+
+    #registro {
+
+        padding: 6vw 4vw 6vw 8vw;
+    }
+
+    #registro .reminder .tempo {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
 }

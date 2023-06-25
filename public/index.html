@@ -11,7 +11,10 @@
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     <title>CompanyTagLine</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -20,16 +23,16 @@
         <img src="PngItem_7053235.png" alt="">
         <div class=" cabeçalho">
             <ul>
-
+                <i id="menu-close" class="fa-sharp fa-solid fa-circle-xmark"></i>
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Produtos</a></li>
+                <li><a href="products.html">Produtos</a></li>
                 <li><a href="#">Contato</a></li>
 
             </ul>
 
-
+            <img id="menu-btn" src="—Pngtree— icon_4697369.png" alt="">
         </div>
 
     </nav>
@@ -98,7 +101,8 @@
                 </div>
             </div>
             <div class="cells">
-                <img src="51xnSf++LlL._AC_UF1000,1000_QL80_.jpg" alt="">
+                <img src="tampa_traseira_redmi_note_11_pro_5g_graphite_c_moldura_5469_1_301128f5b8c393ac173e81817eb336b7.webp"
+                    alt="">
                 <div class="detalhes">
                     <span>Versão de lançamento global</span>
                     <h6>Xiaomi Mi 11</h6>
@@ -253,6 +257,14 @@
             </div>
         </div>
     </footer>
+    <script>
+        $('#menu-btn').click(function () {
+            $('nav .cabeçalho ul').addClass('active')
+        });
+        $('#menu-close').click(function () {
+            $('nav .cabeçalho ul').removeClass('active')
+        });
+    </script>
 </body>
 
 </html>

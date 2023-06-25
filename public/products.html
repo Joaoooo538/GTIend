@@ -10,7 +10,10 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     <title>CompanyTagLine</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -20,8 +23,8 @@
         <img src="PngItem_7053235.png" alt="">
         <div class=" cabeçalho">
             <ul>
-
-                <li><a href="#">Início</a></li>
+                <i id="menu-close" class="fa-sharp fa-solid fa-circle-xmark"></i>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Produtos</a></li>
@@ -29,61 +32,21 @@
 
             </ul>
 
-
+            <img id="menu-btn" src="—Pngtree— icon_4697369.png" alt="">
         </div>
 
     </nav>
 
-    <section id="inicio">
-
-        <h2>A tecnologia no seu bolso</h2>
-        <p>
-            Explore nossa seleção de celulares incríveis. Encontre o modelo perfeito para você. Desfrute de recursos
-            avançados, design elegante e excelente desempenho. Descubra a próxima geração de tecnologia móvel em nossa
-            loja
-            online. Encontre seu celular dos sonhos hoje mesmo!</p>
-        <div class="btn">
-            <a class="btn2" href="#">Leia mais</a>
-            <a class="btn3" href="#">ServiçosX</a>
-        </div>
-    </section>
-
-    <section id="Caract">
-        <h1>Serviços incríveis</h1>
-        <p>Não perca tempo e garanta já seu smartphone de última geração</p>
-        <div class="icons-caract">
-
-            <div class="icons">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAThJREFUSEvd1bsuRVEQBuDvdAqdawgST6BUUpDwAkgUCglPQLyAQuIBJEShoVQSCQW1RqtwS9wbPTKydnKyhbOPc3ZjqnWZ9f+zZv5Zq6Jkq5SM738RHGOkSSk7wWhgVafoo0ngGcwX9m8EL2gvSPqMtpxvTYJdzBQkCN+pogQPOMASYhzWjU0Mp/kZ5vFUtb+OMXSktR9vkJdugJ8nkuogbzCE11zkWS0LE+xgFvtYSWAR7QQ2sNgowR160IXHBDaIS1xjoFGCW/SiDzEO68dVmsd6tdWdom3MpRQtowWrmMRWKnZDBKGKC3TmIo3bRJGjX+oiCGkeJpnep5NRg0ym7zjFQk7GaxhPtYpjNRttD9NlNFqGWc9T8YbWop1cMOiabt9S1Mzn+ig9G//sR6uZ1L84lP7pfwLDt0UZg0iZAwAAAABJRU5ErkJggg=="
-                    width="40px" />
-                <h3>Valorizamos seu dinheiro!</h3>
-                <p>Nossos celulares possuem preços únicos no mercado e ainda podem sofrer descontos inacreditáveis.</p>
-            </div>
-            <div class="icons">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAV5JREFUSEvt1LErhWEUBvAfA8pmMQjJgPwHDCYDAxZJKZMMFspiNGFRyiBlMWGTIpvJZjGwCZmUGJQyoLfeq+/ePvd+93I33/T2veec5zzPed5To8pfTZXrywLQhyn0ogeNuMIJdnBXrMliAA3YwnSRAu9YwTI+0+J+Agj/TzEYk/ZxgHO8oR9jmIn3e5gsB2AB63iO8hz/wGICu6jDPDYK49IYBK0vUI8RHJUwwhBCAy9oxWsyPg1gE3Oxs2L6J+sEgAA0i+1SAGcYwHB0ShYnj8cZHcbZfOekMXhCE5rxmKU6WvCAe7SXYpCzW5Y3kqsVYj+iVWurARBqpjaW7HIUq+iOHYS7UmyS97nzNRajs/JWRdAwaJmkXQlAyL9BZzgkGRQ+9UoZJBv8B8gzQZrEeRKFvd72R0O+RUfhkINN19D1S5teYinNphm3Qnlh5ayD8ionZKgoMWtS1Rl8AcMvTxmOxWwzAAAAAElFTkSuQmCC"
-                    width="40px" />
-                <h3>Suporte 24/7</h3>
-                <p>Estamos disponíveis a qualquer momento para sanar suas dúvidas.</p>
-            </div>
-            <div class="icons">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAT1JREFUSEvN1CEsRlEYxvHfNyMQbaaZTBNIkiJogsJIhqIwySbaREwwQzFBExRBMoJEUBTFRjCbYAI7du929+377j1cn3nLDec57/8853nPrWhwVRrc358CPhI3r9jG/G+4yzpIAWnfIZyWhdS6okWs4hgjjQC04wFN6MJ9GUi9kPcxXqLxIcbC/nqAAZyXANygNw8Q1q7Rg0nsRcKCbgJLSY6572AaW7hEfwSgDU9oQSceixy0JqLw7cNVAWQKOzjBcKotesnrmMMuQoO8OsNgEm4I+auKACGDkMUbOvBSh9CNOzwnuvdYQNClJ1vAWh3ACpaTzGaymiIHQRvm+SAi5CAJ433xXUAzbhGuIa+OMFotiHEQefjasljABmaxmUxVtlveWuEUpY2yv/LqQ+WtRQMa7uDHOcRm8H8Bn2QFNRlXu2umAAAAAElFTkSuQmCC"
-                    width="40px" />
-                <h3>Variedades</h3>
-                <p>Encontre sua marca favorita no nosso site. E caso não tenha uma favorita, pode ter agora!</p>
-            </div>
-
-        </div>
-    </section>
-
     <section id="populares">
-        <h1>Populares</h1>
+        <h1>Smartphones</h1>
         <p>Veja os queridinhos do momento e adquira agora mesmo!</p>
         <div class="popular-box">
             <div class="cells">
                 <img src="4933_smartphone-samsung-galaxy-s21-fe-5g-128gb-6gb-ram-processador-octa-core-camera-traseira-tripla-tela-6_m1_638152699368430142.jpg"
                     alt="">
                 <div class="detalhes">
-                    <span>Versão de lançamento global</span>
+                    <span>O Galaxy S21 Ultra é o topo de linha da Samsung, oferecendo um display incrível, câmeras
+                        versáteis e recursos avançados.</span>
                     <h6>Samsumg S21</h6>
                     <div clss="estrelas">
                         <i class="fas fa-star"></i>
@@ -98,9 +61,11 @@
                 </div>
             </div>
             <div class="cells">
-                <img src="51xnSf++LlL._AC_UF1000,1000_QL80_.jpg" alt="">
+                <img src="tampa_traseira_redmi_note_11_pro_5g_graphite_c_moldura_5469_1_301128f5b8c393ac173e81817eb336b7.webp"
+                    alt="">
                 <div class="detalhes">
-                    <span>Versão de lançamento global</span>
+                    <span>O Xiaomi Mi 11 oferece um excelente desempenho, câmeras de alta resolução e uma tela AMOLED
+                        brilhante.</span>
                     <h6>Xiaomi Mi 11</h6>
                     <div clss="estrelas">
                         <i class="fas fa-star"></i>
@@ -117,7 +82,8 @@
             <div class="cells">
                 <img src="1xg.webp" alt="">
                 <div class="detalhes">
-                    <span>Versão de lançamento global</span>
+                    <span>O iPhone 13 Pro Max é o carro-chefe da Apple, apresentando um poderoso processador, câmeras de
+                        última geração e uma tela impressionante.</span>
                     <h6>Iphone 13 pro max</h6>
                     <div clss="estrelas">
                         <i class="fas fa-star"></i>
@@ -131,10 +97,31 @@
                     $7.999,00
                 </div>
             </div>
+
             <div class="cells">
-                <img src="6191aDbiwjL._AC_UF1000,1000_QL80_.jpg" alt="">
+                <img src="MotorolaMotoGPower2021__1_.png" alt="">
                 <div class="detalhes">
-                    <span>Versão de lançamento global</span>
+                    <span>O Motorola Moto G Power (2021) é um celular de excelente custo-benefício, oferecendo uma
+                        bateria de longa duração, desempenho sólido e câmeras versáteis.</span>
+                    <h6>Motorola G Power</h6>
+                    <div clss="estrelas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="cost">
+                    $1.599,00
+                </div>
+            </div>
+
+            <div class="cells">
+                <img src="Google-Pixel-6-Pro-128gb-Cloudy-White_1682625551_g.jpg" alt="">
+                <div class="detalhes">
+                    <span>O Google Pixel 6 Pro traz uma experiência de software pura com o Android, além de uma câmera
+                        de alta qualidade que captura fotos impressionantes.</span>
                     <h6>Google 6 pixel Pro</h6>
                     <div clss="estrelas">
                         <i class="fas fa-star"></i>
@@ -149,10 +136,11 @@
                 </div>
             </div>
             <div class="cells">
-                <img src="MotorolaMotoGPower2021__1_.png" alt="">
+                <img src="7055798435_3.webp" alt="">
                 <div class="detalhes">
-                    <span>Versão de lançamento global</span>
-                    <h6>Motorola G Power</h6>
+                    <span>O Nokia 5.4 é um celular de preço acessível com um desempenho confiável e uma câmera
+                        versátil.</span>
+                    <h6>Nokia 5.4</h6>
                     <div clss="estrelas">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -162,14 +150,15 @@
                     </div>
                 </div>
                 <div class="cost">
-                    $1.599,00
+                    $1.399,00
                 </div>
             </div>
             <div class="cells">
-                <img src="i443132.webp" alt="">
+                <img src="download (9).jpg" alt="">
                 <div class="detalhes">
-                    <span>Versão de lançamento global</span>
-                    <h6>OnePlus 9 Pro</h6>
+                    <span>O Sony Xperia 1 III é um smartphone premium com destaque para sua tela 4K HDR OLED e seu
+                        conjunto de câmeras de alta qualidade.</span>
+                    <h6>Sonya Xperia III</h6>
                     <div clss="estrelas">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -179,10 +168,45 @@
                     </div>
                 </div>
                 <div class="cost">
-                    $4.999,00
+                    $6.999,00
                 </div>
             </div>
-
+            <div class="cells">
+                <img src="157753-800-auto.png" alt="">
+                <div class="detalhes">
+                    <span>O motorola edge 40 foi criado para facilitar sua vida. A classificação IP68 traz resistência à
+                        poeira e sujeira.</span>
+                    <h6>Moto G One Fusion</h6>
+                    <div clss="estrelas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="cost">
+                    $1.999,00
+                </div>
+            </div>
+            <div class="cells">
+                <img src="D_NQ_NP_617197-MLA53781784315_022023-O.webp" alt="">
+                <div class="detalhes">
+                    <span>O Xiaomi 12T Pro é um smartphone Android com características inovadoras que o tornam uma
+                        excelente opção para qualquer tipo de utilização. </span>
+                    <h6>Xiaomi 12T Pro</h6>
+                    <div clss="estrelas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="cost">
+                    $2.999,00
+                </div>
+            </div>
         </div>
     </section>
 
@@ -216,6 +240,7 @@
             </div>
         </div>
     </section>
+
 
     <footer>
         <div class="footer-content">
@@ -253,6 +278,14 @@
             </div>
         </div>
     </footer>
+    <script>
+        $('#menu-btn').click(function () {
+            $('nav .cabeçalho ul').addClass('active')
+        });
+        $('#menu-close').click(function () {
+            $('nav .cabeçalho ul').removeClass('active')
+        });
+    </script>
 </body>
 
 </html>
